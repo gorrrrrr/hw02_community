@@ -6,7 +6,6 @@ User = get_user_model()
 
 class Group(models.Model):
     title = models.CharField("Название", max_length=200,)
-    address = models.URLField(blank=True, null=True, max_length=200,)
     slug = models.SlugField("Текст для ссылки", unique=True)
     description = models.TextField("Описание",)
 
